@@ -7,8 +7,8 @@ power(A,N) -> A*power(A,N-1).
 duplicateElements(List) ->
   [2*N || N <- List].
 
-divisibleBy(Lista,Dzielnik) ->
-  [N || N <- Lista, N rem Dzielnik =:= 0].
+divisibleBy(List,Divisor) ->
+  [N || N <- List, N rem Divisor =:= 0].
 
 contains([],_) ->
   false;
